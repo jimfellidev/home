@@ -87,6 +87,54 @@ body {
   }
 }
 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .work__img--top:hover {
+    position: relative;
+    top: 5%;
+    z-index: 2;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .work__img--left:hover {
+    position: relative;
+    left: -14%;
+    z-index: 2;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .work__img--right:hover {
+    position: relative;
+    left: 14%;
+    z-index: 2;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .work__img--middle:hover {
+    position: relative;
+    top: 10%;
+    z-index: 2;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .work__img--middle2:hover {
+    position: relative;
+    top: 20%;
+    z-index: 2;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .work__img--bottom:hover {
+    position: relative;
+    top: 40%;
+    z-index: 2;
+  }
+}
+
 .test {
   background-color: tomato;
   padding: 0;
