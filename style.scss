@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+}
+
+.work {
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 4%;
+    @media all and (min-width: 768px) and (max-width: 1024px) { 
+        padding-bottom: 2.5%;
+    }
+    @media all and (min-width: 320px) and (max-width: 768px) { 
+            padding-bottom: 0;
+    }
+    
+
+    &__wrapper {
+        width: 66.6%;
+        grid-row-gap: 2.3%;
+        grid-column-gap: 2.7%;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: auto;
+        padding: 0;
+        padding-top: 6%;
+        padding-bottom: 6%;
+        @media all and  (min-width: 1024px) { 
+            margin-left: 16%;
+        }
+        @media all and (min-width: 768px) and (max-width: 1024px) { 
+                width: 45.8%;
+                grid-row-gap: 2.9%;
+                height: 76%;
+                padding-bottom: 7.5%;
+                padding-top: 7.5%;
+                margin-left: 26.5%;
+            }
+        @media all and (min-width: 320px) and (max-width: 768px) { 
+            display: block;
+            width: 81.25%;
+            padding-bottom: 0;
+        }
+            
+    }
+    &__li {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        @media all and (min-width: 320px) and (max-width: 768px) { 
+            padding-bottom: 7%;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        &:hover {
+            @media all and (min-width: 768px) and (max-width: 1024px) { 
+                transform: scale3d(1.15, 1.1, 1);
+            }
+        }
+    }
+}
+
+
+
+
+// Example space
+.test {
+    background-color: tomato;
+    padding: 0;
+    margin: 0;
+}
+.about {
+    background-color: tomato;
+    padding: 0;
+    margin: 0;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+
+// -----IMG HOVER
+.img__wrap {
+        position: relative;
+        height: 100%;
+  }
+  .img__description {
+    padding-top: 30%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+    @media all and (min-width: 320px) and (max-width: 768px) { 
+       height: 55%;
+        // img padding seems to large but numbers work?
+    }
+  }
+  
+  //MQ to darken img, ignoring med MQ to work with scale
+  .img__wrap:hover .img__description {
+    @media all and (min-width: 320px) and (max-width: 768px) { 
+        visibility: visible;
+        opacity: 1;    
+    }
+    @media all and  (min-width: 1024px) { 
+        visibility: visible;
+        opacity: 1;    
+    }
+    
+  }
+  
+
+
+
+
+// med MQ
+
+// -adjust hover on med.  
+// individually change size and fidget to see how it works.
+// maybe try padding padding to fit the right way?
+
+
+// roughly 240px wide on hover.
+// roughly 163 px height on hover
+// 208w 140h on non :hover
+// find percentage between hovered boxes?  
+// may have to change total width of container?
+
+
+// distance on left box and right box will be the same, center will be first and most important to figure out.
