@@ -3,24 +3,36 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
         <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
         <title>Portfolio Comp</title>
     </head>
     <body>
-        <header>
-            <div class="nav__container"><!-- turn into nav bar -->
-                <div class="nav__icon"><!--Icon--></div>
-                <ul class="nav__list">
-                    <li class="nav__item">Work</li>
-                    <li class="nav__item">About</li>
-                    <li class="nav__item">Contact</li>
-                </ul>
-            </div>
-            <div class="test">
-                <!-- header content (SLIDER)--><p>asdasd</p>
+        <header id="home" class="menu-section">
+            <!-- NAV SECTION -->
+
+
+            <nav class="navbar">
+                <div class="nav-container">
+                    <a href="www.jimfelli.com" class="logo">
+                        <img src="images/mm.jpg" alt="mm logo">
+                    </a>
+                    <ul class="nav-links">
+                      <li class="nav-item"><a href="#work">WORK</a></li>
+                      <li class="nav-item"><a href="#">ABOUT</a></li>
+                      <li class="nav-item nav-item-last"><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+                <!-- header content (SLIDER)-->
+            <div class="test2">
+                <p>HEADER SLIDER GOES HERE</p>
             </div>
         </header>
-        <div class="work">
-            <!-- work content  make image grid -->  
+        
+        <!-- -------WORK SECTION------- -->
+        <div class="work" id="work">
                 <ul class="work__wrapper">
                     <li class="work__li">
                         <a href="#about">
@@ -42,7 +54,7 @@
                     <li class="work__li">
                         <a href="#about">
                             <div class="img__wrap">
-                                <img class="work__img work__img--right work__img--top work__mhn" src="images/MHN.jpg" alt="placeholder">
+                                <img class="work__img work__img--right work__img--top work__mhn" src="images/MHN.jpg" alt="logo">
                                 <p class="img__description">MEN'S HEALTH NETWORK</p>
                             </div>
                         </a>
@@ -121,17 +133,46 @@
                     </li> 
                 </ul>
         </div>
+        <!-- About me content-->
         <div class="about" id="about">
-            <p>asdasdasd</p>
-            <!-- About me content-->
+            <div class="about__container">
+                <h1 class="about__header">ABOUT ME</h1>
+                <img class="about__photo" src="images/marty_pic.jpg" alt="photo">
+                <div class="about__content">
+                    <p class="about__content--1">I am Martin Mascio, a graphic designer who specialized in digital & identity design.  I combine design, technology, & strategy to help brands build engaging websites and applications</p>
+                    <p class="about__content--2">I grew up in New Jersey & Philadelphia and currently reside in Manayunk, PA where the moments are never dull.</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <!-- contact content -->
+        <!-- contact content -->
+        <div class="contact" id="contact">
+            <div class="contact__container">
+                <div class="contact__wrapper">
+                    <h2 class="contact__header">CONTACT</h2>
+                    <div class="contact__content">
+                        <p class="contact__content--1">If you would like to say hello or work with me on a project,</p>
+                        <p>feel free to <a href="#">contact me.</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <footer>
-            <!-- copyright and shit -->
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__container--circle-wrap">
+                    <span class="footer__container--circle-icon-background"></span>
+                    <i class="footer__container--circle-icon fa fa-chevron-circle-up" style="font-size:48px"></i>
+                </div>
+                <div class="footer__links">
+                    <p><i class="fa fa-envelope" style="font-size:28px"></i>
+                        <i class="footer__content--linked-icon fa fa-linkedin fa-2x"></i> </p>
+                </div>
+                <div class="footer__content">
+                    <p>&#x24B8; 2013 Martin Mascio.  All Rights Reserved.</p>  
+                    <p>Site developed by Geoff Gaenslen</p>
+                </div>
+            </div>
         </footer>
+        
     </body>
     <script src="script.js"></script>
 </html>
