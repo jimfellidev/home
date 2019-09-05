@@ -87,9 +87,12 @@ nav {
 
 //---SECTION HEADER/SLIDER---//
 .test2 {
+  // top: -70px;
     background-color: red;
-    height: 90px;
+    height: 100px;
     padding-top: 70px;
+    
+
 }
 
 //---SECTION WORK---// 
@@ -182,9 +185,6 @@ p {
     opacity: 0;
     /* transition effect. not necessary */
     transition: opacity .2s, visibility .2s;
-    @media all and (min-width: 320px) and (max-width: 768px) { 
-       height: 55%;
-    }
   }
   
   //MQ to darken img, ignoring med MQ to work with scale
@@ -206,6 +206,9 @@ p {
     background-size: cover;
     background-position: center center;
     height: 100vh;
+    @media all and (min-width: 320px) and (max-width: 768px) { 
+     height: 700px;
+   }
 
     &__container {
       height: 100%;
@@ -214,6 +217,7 @@ p {
       top: 50%;
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
+      overflow: auto;
     }
 
     &__header {
@@ -228,6 +232,10 @@ p {
       transform: translate(-50%);
       color: rgb(255,255,255);
       -webkit-font-smoothing: antialiased;
+      @media all and (min-width: 320px) and (max-width: 768px) { 
+        top: 8%;
+        font-size: 26px;
+     }
     }
 
     &__photo {
@@ -238,8 +246,27 @@ p {
       left: 50%;
       transform: translate(-50%);
       top: 31%;
-
+      border-radius: 50%;
+      @media all and (min-width: 320px) and (max-width: 768px) { 
+       top: 17%;
+       width: 216px;
+     }
+      &--divide {
+        transform: translate(-50%);
+        border-top: 1px solid white;
+        display: block;
+        position: absolute;
+        width: 90px;
+        top: 55%;
+        left: 50%;
+        @media all and (min-width: 320px) and (max-width: 768px) { 
+          width: 189px;
+          top: 53%;
+       }
+    
+      }
     }
+
 
     &__content {
         text-align: center;
@@ -255,7 +282,11 @@ p {
         line-height: 1.5;
         display: inline-block;
         color: rgb(255,255,255);
-        -webkit-font-smoothing: antialiased;
+        @media all and (min-width: 320px) and (max-width: 768px) { 
+          width: 75%;
+          top: 58%;
+          
+       }
         
 
         &--1 {
@@ -305,6 +336,9 @@ p {
       transform: translate(-50%);
       color: rgb(255,255,255);
       -webkit-font-smoothing: antialiased;
+      @media all and (min-width: 320px) and (max-width: 768px) { 
+       top: 18%;
+     }
     }
 
     &__content {
@@ -323,7 +357,17 @@ p {
         display: block;
         color: rgb(255,255,255);
         -webkit-font-smoothing: antialiased;
-        
+        @media all and (min-width: 320px) and (max-width: 768px) { 
+          top: 43%;
+          font-size: 16px;
+          width: 66%;
+       }
+          &--link {
+            color: white;
+            @media all and (min-width: 320px) and (max-width: 768px) { 
+              font-weight: bold;
+           }
+          }
     }
   }
   //---SECTION FOOTER---//
@@ -337,6 +381,9 @@ p {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    @media all and (min-width: 320px) and (max-width: 768px) { 
+      height: 50vh;
+   }
     
     &__container {
         height: 100%;
@@ -351,6 +398,9 @@ p {
             position: absolute;
             transform: translate(-50%);
             top: -13%;
+            @media all and (min-width: 320px) and (max-width: 768px) { 
+              top: -7%;
+           }
             &:before {
               color: black;
             }
@@ -364,6 +414,9 @@ p {
               transform: translate(-50%);
               top: -6%;
               border-radius: 25%;
+              @media all and (min-width: 320px) and (max-width: 768px) { 
+                top: -4%;
+             }
           }
         }
     }
@@ -372,8 +425,6 @@ p {
       font-weight: normal;
       font-family: 'Lato', sans-serif;
       text-align: center;
-      padding-left: 12px;
-      padding-right: 12px;
       padding-top: 16px;
       border-top: 1px solid white;
       color: white;
@@ -383,6 +434,13 @@ p {
       transform: translate(-50%);
       color: rgb(255,255,255);
       -webkit-font-smoothing: antialiased;
+      @media all and (min-width: 320px) and (max-width: 768px) { 
+        padding-top: 49px;
+        border-top: 1.2px solid white;
+        top: 20%;
+        width: 156px;
+
+     }
     }
     &__content {
       text-align: center;
@@ -399,11 +457,20 @@ p {
       display: block;
       color: #a1a3a6;
       -webkit-font-smoothing: antialiased;
-        &--email-icon{
-          // padding-right: 32px;
-        }
+      @media all and (min-width: 320px) and (max-width: 768px) { 
+        width: 90%;
+        top: 60%;
+        font-size: 14px;
+        line-height: 1.3;
+     }
+        // &--email-icon{
+        //   // padding-right: 32px;
+        // }
         &--linked-icon {
           padding-left: 32px;
+          @media all and (min-width: 320px) and (max-width: 768px) { 
+            padding-left: 44px;
+         }
         }
     }
   }
@@ -412,8 +479,3 @@ p {
     color: #a1a3a6;
     
   }
-
-
-// find linked in and email icons
-// add borders by creating divs at appropriate location and giving them border top
-// find icons for buttons -- can probably even just save the buttons that are already made and add them to the content

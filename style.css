@@ -92,7 +92,7 @@ nav {
 
 .test2 {
   background-color: red;
-  height: 90px;
+  height: 100px;
   padding-top: 70px;
 }
 
@@ -201,12 +201,6 @@ p {
   transition: opacity .2s, visibility .2s;
 }
 
-@media all and (min-width: 320px) and (max-width: 768px) {
-  .img__description {
-    height: 55%;
-  }
-}
-
 .img__wrap:hover .img__description {
   visibility: visible;
   opacity: 1;
@@ -223,6 +217,12 @@ p {
   height: 100vh;
 }
 
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .about {
+    height: 700px;
+  }
+}
+
 .about__container {
   height: 100%;
   width: 100%;
@@ -230,6 +230,7 @@ p {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  overflow: auto;
 }
 
 .about__header {
@@ -247,6 +248,13 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .about__header {
+    top: 8%;
+    font-size: 26px;
+  }
+}
+
 .about__photo {
   display: block;
   margin: 0 auto;
@@ -256,6 +264,32 @@ p {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   top: 31%;
+  border-radius: 50%;
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .about__photo {
+    top: 17%;
+    width: 216px;
+  }
+}
+
+.about__photo--divide {
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border-top: 1px solid white;
+  display: block;
+  position: absolute;
+  width: 90px;
+  top: 55%;
+  left: 50%;
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .about__photo--divide {
+    width: 189px;
+    top: 53%;
+  }
 }
 
 .about__content {
@@ -273,7 +307,13 @@ p {
   line-height: 1.5;
   display: inline-block;
   color: white;
-  -webkit-font-smoothing: antialiased;
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .about__content {
+    width: 75%;
+    top: 58%;
+  }
 }
 
 .about__content--1 {
@@ -311,6 +351,12 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .contact__header {
+    top: 18%;
+  }
+}
+
 .contact__content {
   text-align: center;
   width: 47%;
@@ -329,6 +375,24 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .contact__content {
+    top: 43%;
+    font-size: 16px;
+    width: 66%;
+  }
+}
+
+.contact__content--link {
+  color: white;
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .contact__content--link {
+    font-weight: bold;
+  }
+}
+
 .footer {
   margin: 0;
   padding: 0;
@@ -337,6 +401,12 @@ p {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .footer {
+    height: 50vh;
+  }
 }
 
 .footer__container {
@@ -357,6 +427,12 @@ p {
   top: -13%;
 }
 
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .footer__container--circle-icon {
+    top: -7%;
+  }
+}
+
 .footer__container--circle-icon:before {
   color: black;
 }
@@ -374,13 +450,17 @@ p {
   border-radius: 25%;
 }
 
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .footer__container--circle-icon-background {
+    top: -4%;
+  }
+}
+
 .footer__links {
   font-size: 16px;
   font-weight: normal;
   font-family: 'Lato', sans-serif;
   text-align: center;
-  padding-left: 12px;
-  padding-right: 12px;
   padding-top: 16px;
   border-top: 1px solid white;
   color: white;
@@ -391,6 +471,15 @@ p {
           transform: translate(-50%);
   color: white;
   -webkit-font-smoothing: antialiased;
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .footer__links {
+    padding-top: 49px;
+    border-top: 1.2px solid white;
+    top: 20%;
+    width: 156px;
+  }
 }
 
 .footer__content {
@@ -411,8 +500,23 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .footer__content {
+    width: 90%;
+    top: 60%;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}
+
 .footer__content--linked-icon {
   padding-left: 32px;
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .footer__content--linked-icon {
+    padding-left: 44px;
+  }
 }
 
 .fa {
