@@ -140,6 +140,18 @@ nav {
   top: 28%;
 }
 
+@media all and (min-width: 455px) and (max-width: 667px) {
+  .intro__wrapper {
+    top: 41%;
+  }
+}
+
+@media all and (min-width: 667px) and (max-width: 768px) {
+  .intro__wrapper {
+    top: 46%;
+  }
+}
+
 @media all and (min-width: 960px) {
   .intro__wrapper {
     width: 61.6%;
@@ -191,6 +203,18 @@ nav {
   font-weight: bolder;
   border-radius: 6px;
   text-transform: uppercase;
+}
+
+@media all and (min-width: 455px) and (max-width: 667px) {
+  .intro__button {
+    bottom: -61%;
+  }
+}
+
+@media all and (min-width: 667px) and (max-width: 768px) {
+  .intro__button {
+    bottom: -84%;
+  }
 }
 
 @media all and (min-width: 960px) {
