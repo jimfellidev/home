@@ -229,6 +229,15 @@ nav {
   }
 }
 
+.work:before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 0;
+  height: 5em;
+  margin-top: -70px;
+}
+
 .work__wrapper {
   width: 66.6%;
   grid-row-gap: 2.3%;
