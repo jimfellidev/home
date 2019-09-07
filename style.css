@@ -15,6 +15,52 @@ body {
   padding: 0;
 }
 
+.nav__drop {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: black;
+  height: 70px;
+  position: fixed;
+  margin: auto;
+  z-index: 9;
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .nav__drop {
+    display: none;
+  }
+}
+
+.nav__drop--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  list-style: none;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+}
+
+.nav__drop--item {
+  padding-top: 23px;
+}
+
+.nav__drop--item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.nav__drop--item a {
+  color: white;
+  text-decoration: none;
+}
+
 nav {
   width: 100%;
   background-color: white;
@@ -46,6 +92,16 @@ nav {
   .nav-container {
     width: 50%;
   }
+}
+
+@media all and (max-width: 768px) {
+  .nav__active {
+    top: 70px;
+  }
+}
+
+.nav__plus--wrapper:hover {
+  cursor: pointer;
 }
 
 @media all and (min-width: 768px) {
