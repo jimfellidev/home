@@ -48,8 +48,8 @@ body {
   &--item {
     padding-top: 23px;
     &:hover {
-      // transform: scale(1.2); 
-      text-decoration: underline;
+      transform: scale(1.2); 
+      // text-decoration: underline;
     }
     & a {
       color: white;

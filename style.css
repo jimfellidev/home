@@ -52,7 +52,8 @@ body {
 }
 
 .nav__drop--item:hover {
-  text-decoration: underline;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .nav__drop--item a {
