@@ -52,13 +52,40 @@ body {
 }
 
 .nav__drop--item:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  text-decoration: underline;
 }
 
 .nav__drop--item a {
   color: white;
   text-decoration: none;
+}
+
+.nav__drop--content > li {
+  position: relative;
+  padding: .5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.33%;
+          flex: 0 1 33.33%;
+}
+
+.nav__drop--content > li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 1px;
+  height: 100%;
+  background-color: white;
 }
 
 nav {
@@ -123,6 +150,11 @@ nav {
 .nav__plus {
   position: relative;
   margin-top: 8.5px;
+}
+
+.nav__plus--active {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .logo {
