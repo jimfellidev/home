@@ -52,8 +52,7 @@ body {
 }
 
 .nav__drop--item:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  font-size: 20px;
 }
 
 .nav__drop--item a {
