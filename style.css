@@ -15,6 +15,13 @@ body {
   padding: 0;
 }
 
+#myDropdown {
+  -webkit-transition: 0.3s -webkit-transform;
+  transition: 0.3s -webkit-transform;
+  transition: 0.3s transform;
+  transition: 0.3s transform, 0.3s -webkit-transform;
+}
+
 .nav__drop {
   margin: 0;
   padding: 0;
@@ -61,6 +68,7 @@ body {
 }
 
 .nav__drop--content > li {
+  background-color: black;
   position: relative;
   padding: .5rem 1rem;
   display: -webkit-box;
@@ -123,7 +131,8 @@ nav {
 
 @media all and (max-width: 768px) {
   .nav__active {
-    top: 70px;
+    -webkit-transform: translatey(70px);
+            transform: translatey(70px);
   }
 }
 
@@ -149,7 +158,11 @@ nav {
 
 .nav__plus {
   position: relative;
-  margin-top: 8.5px;
+  margin-top: 9.5px;
+}
+
+.nav__plus:hover {
+  opacity: .85;
 }
 
 .nav__plus--active {
@@ -160,6 +173,10 @@ nav {
 .logo {
   display: inline-block;
   padding-top: 2px;
+}
+
+.logo:hover {
+  opacity: .85;
 }
 
 .nav-links {
@@ -187,11 +204,6 @@ nav {
   padding-top: 20px;
 }
 
-.nav-item:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 .nav-item:hover a {
   color: black;
 }
@@ -203,7 +215,6 @@ nav {
 }
 
 .nav-item-last a {
-  padding-right: 0;
   margin-right: 0;
 }
 
@@ -212,7 +223,7 @@ nav {
   padding: 0;
   padding-top: 70px;
   height: 100vh;
-  background-image: url(images/slidercomp.jpg);
+  background-image: url(images/space2.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
@@ -442,7 +453,8 @@ p {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  background-image: url("images/backimg.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("images/backimg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3)), url("images/backimg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -628,7 +640,7 @@ p {
 .footer {
   margin: 0;
   padding: 0;
-  height: 25vh;
+  height: 30vh;
   background-image: url(images/backgroundfoot.jpg);
   background-size: cover;
   background-position: center center;
@@ -722,7 +734,7 @@ p {
   width: 47%;
   color: white;
   position: absolute;
-  top: 66%;
+  top: 58%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   left: 50%;

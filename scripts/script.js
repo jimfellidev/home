@@ -11,10 +11,10 @@ const addDropper = document.querySelector(".navbar");
 hamburger.addEventListener("click", function() {
     hamburger.classList.toggle("is-active");
     if (hamburger.classList.contains('is-active')){
-      addDropper.classList.add("nav__active");
+      menuId.classList.add("nav__active");
       hamburger.classList.add("nav__plus--active");
     } else {
-      addDropper.classList.remove("nav__active");
+      menuId.classList.remove("nav__active");
       hamburger.classList.remove("nav__plus--active");
     } 
   });
