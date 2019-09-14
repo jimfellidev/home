@@ -16,10 +16,10 @@ body {
 }
 
 #myDropdown {
-  -webkit-transition: 0.3s -webkit-transform;
-  transition: 0.3s -webkit-transform;
-  transition: 0.3s transform;
-  transition: 0.3s transform, 0.3s -webkit-transform;
+  -webkit-transition: 0.5s -webkit-transform;
+  transition: 0.5s -webkit-transform;
+  transition: 0.5s transform;
+  transition: 0.5s transform, 0.5s -webkit-transform;
 }
 
 .nav__drop {
@@ -215,7 +215,7 @@ nav ul li a:before {
 }
 
 nav ul li a:hover {
-  color: #555;
+  color: black;
 }
 
 .nav-container ul li a {

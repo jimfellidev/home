@@ -20,7 +20,7 @@ body {
 //---SECTION NAV-DROPBOX---//
 
 #myDropdown {
-  transition: 0.3s transform;
+  transition: 0.5s transform;
 }
 
 .nav__drop {
@@ -181,7 +181,7 @@ nav ul li a:before {
   transition: all .5s;
 }
 nav ul li a:hover {
-  color: #555;
+  color: black;
 }
 .nav-container ul li a {
   position: relative;
