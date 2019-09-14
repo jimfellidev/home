@@ -51,12 +51,13 @@ body {
 
   &--item {
     padding-top: 23px;
-    &:hover {
-      font-size: 20px;
-    }
     & a {
       color: white;
       text-decoration: none;
+      &:hover {
+        opacity: .4;
+        z-index: 10;
+      }
     }
   }
 }
@@ -166,17 +167,83 @@ nav {
   display: inline-block;
   padding: 10px 15px;
   text-decoration: none;
-  color: black;
-  padding-top: 20px;
+  color: black;  
+  transform: translatey(15%);
 }
 
 
 
+/* NAVIGATION HOVER */
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+.nav-container ul li a {
+  position: relative;
+}
+
+.nav-container ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+.nav-container ul li a:hover:after {
+  width: 100%;
+}
+
+.nav-container ul li a {
+  transition: all 2s;
+}
+
+.nav-container ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+.nav-container ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+.nav-container ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/* NAVIGATION HOBER Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
 
 
-// .nav-item:hover {
-//   transform: scale(1.2);
-// }      UPDATE
+
 
 
 
@@ -187,8 +254,8 @@ nav {
 
 .logo img {
   vertical-align: middle;
-  height: 55px;
-  width: 55px;
+  height: 50px;
+  width: 50px;
 }
 
 .nav-item-last a {
@@ -597,9 +664,9 @@ p {
             left: 50%;
             position: absolute;
             transform: translate(-50%);
-            top: -12%;
+            top: -10%;
             @media all and (min-width: 320px) and (max-width: 768px) { 
-              top: -8.5%;
+              top: -7%;
            }
             &:before {
               color: black;
