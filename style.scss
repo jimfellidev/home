@@ -348,6 +348,12 @@ nav ul li a:hover {
     &:hover {
       cursor: pointer;
     }
+    &:focus {
+     outline: none;
+     border: none; 
+     // PUT NEW BUTTON FOCUS HERE
+     opacity: .5;
+    }
   }
 }
 

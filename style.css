@@ -409,6 +409,12 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+.intro__button:focus {
+  outline: none;
+  border: none;
+  opacity: .5;
+}
+
 .work {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
