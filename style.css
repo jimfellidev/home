@@ -751,12 +751,18 @@ p {
   position: absolute;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  top: -10%;
+  top: -11%;
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
   .footer__container--circle-icon {
-    top: -7%;
+    top: -8%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 960px) {
+  .footer__container--circle-icon {
+    top: -13%;
   }
 }
 
@@ -773,8 +779,14 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  top: -6%;
+  top: -7%;
   border-radius: 25%;
+}
+
+@media all and (min-width: 768px) and (max-width: 960px) {
+  .footer__container--circle-icon-background {
+    top: -8%;
+  }
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
