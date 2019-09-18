@@ -30,8 +30,7 @@ hamburger.addEventListener("click", function() {
     return false;
   }
   
-// // re-write 
-
+// CLOSE DROP MENU ON OFFCLICK
 
   document.addEventListener("click", function(event){
     console.log('event.target', event.target);    
@@ -42,7 +41,7 @@ hamburger.addEventListener("click", function() {
       console.log('true')      
     } else {
       console.log('false')
-      addDropper.classList.remove("nav__active");
+      menuId.classList.remove("nav__active");
       hamburger.classList.remove("nav__plus--active");
     }
   })    
