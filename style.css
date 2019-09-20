@@ -231,7 +231,7 @@ nav ul li a:hover {
   width: 0%;
   content: '.';
   color: transparent;
-  background: #aaa;
+  background: black;
   height: 1px;
 }
 
@@ -244,43 +244,7 @@ nav ul li a:hover {
   transition: all 2s;
 }
 
-.nav-container ul li a:after {
-  text-align: left;
-  content: '.';
-  margin: 0;
-  opacity: 0;
-}
-
-.nav-container ul li a:hover {
-  color: #fff;
-  z-index: 1;
-}
-
-.nav-container ul li a:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill .9s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1;
-}
-
 /* NAVIGATION HOBER Keyframes */
-@-webkit-keyframes fill {
-  0% {
-    width: 0%;
-    height: 1px;
-  }
-  50% {
-    width: 100%;
-    height: 1px;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    background: black;
-  }
-}
-
 .nav-item:hover a {
   color: black;
 }
@@ -407,12 +371,12 @@ nav ul li a:hover {
 
 .intro__button:hover {
   cursor: pointer;
+  opacity: .5;
 }
 
 .intro__button:focus {
   outline: none;
   border: none;
-  opacity: .5;
 }
 
 .work {
@@ -533,7 +497,7 @@ p {
 }
 
 .about {
-  overflow: hidden;
+  overflow: auto;
   margin: 0;
   padding: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("images/backimg.jpg");
@@ -557,7 +521,6 @@ p {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  overflow: auto;
 }
 
 .about__header {
@@ -566,8 +529,8 @@ p {
   font-family: 'Lato', sans-serif;
   text-align: center;
   color: white;
-  position: absolute;
-  top: 15%;
+  position: relative;
+  top: 18%;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -577,26 +540,26 @@ p {
 
 @media all and (min-width: 320px) and (max-width: 768px) {
   .about__header {
-    top: 8%;
+    top: 10%;
     font-size: 26px;
   }
 }
 
 .about__photo {
   display: block;
-  margin: 0 auto;
-  position: absolute;
+  margin: 0;
+  position: relative;
   width: 140px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  top: 31%;
+  top: 23%;
   border-radius: 50%;
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
   .about__photo {
-    top: 17%;
+    top: 14%;
     width: 216px;
   }
 }
@@ -606,16 +569,16 @@ p {
           transform: translate(-50%);
   border-top: 1px solid white;
   display: block;
-  position: absolute;
+  position: relative;
   width: 90px;
-  top: 55%;
+  top: 28%;
   left: 50%;
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
   .about__photo--divide {
     width: 189px;
-    top: 53%;
+    top: 17%;
   }
 }
 
@@ -623,8 +586,8 @@ p {
   text-align: center;
   width: 47%;
   color: white;
-  position: absolute;
-  top: 63%;
+  position: relative;
+  top: 105%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   left: 50%;
@@ -639,12 +602,17 @@ p {
 @media all and (min-width: 320px) and (max-width: 768px) {
   .about__content {
     width: 75%;
-    top: 58%;
+    top: 69%;
   }
 }
 
 .about__content--1 {
   padding-bottom: 10px;
+}
+
+.about__content--wrapper {
+  height: 30%;
+  width: 100%;
 }
 
 .contact {
@@ -663,14 +631,19 @@ p {
   transform: translateY(-50%);
 }
 
+.contact__wrapper {
+  width: 100%;
+  height: 100%;
+}
+
 .contact__header {
   font-size: 36px;
   font-weight: normal;
   font-family: 'Lato', sans-serif;
   text-align: center;
   color: white;
-  position: absolute;
-  top: 34%;
+  position: relative;
+  top: 36%;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -680,7 +653,7 @@ p {
 
 @media all and (min-width: 320px) and (max-width: 768px) {
   .contact__header {
-    top: 18%;
+    top: 27%;
   }
 }
 
@@ -688,8 +661,8 @@ p {
   text-align: center;
   width: 47%;
   color: white;
-  position: absolute;
-  top: 55%;
+  position: relative;
+  top: 41%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   left: 50%;
@@ -704,7 +677,7 @@ p {
 
 @media all and (min-width: 320px) and (max-width: 768px) {
   .contact__content {
-    top: 43%;
+    top: 32%;
     font-size: 16px;
     width: 66%;
   }
