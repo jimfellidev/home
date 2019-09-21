@@ -159,7 +159,21 @@ nav {
 
 .nav__plus {
   position: relative;
-  margin-top: 9.5px;
+  margin-top: 6px;
+  background: black;
+  height: 40px;
+  position: relative;
+  width: 14px;
+}
+
+.nav__plus:after {
+  background: black;
+  content: "";
+  height: 14px;
+  left: -13px;
+  position: absolute;
+  top: 13px;
+  width: 40px;
 }
 
 .nav__plus:hover {
