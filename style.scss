@@ -166,6 +166,7 @@ nav {
 .nav-item a {
   display: inline-block;
   padding: 10px 15px;
+  padding-bottom: 7px;
   text-decoration: none;
   color: black;  
   transform: translatey(15%);
@@ -200,7 +201,7 @@ nav ul li a:hover {
   height: 1px;
 }
 .nav-container ul li a:hover:after {
-  width: 100%;
+  width: 75%;
 }
 
 .nav-container ul li a {
@@ -210,40 +211,40 @@ nav ul li a:hover {
 
 // HIGHLIGHT AND FILL NAV ITEM BLOCK / MAKE CONTENT TRANSPARENT, FILL FROM BOTTOM
 
-// .nav-container ul li a:after {
-//   text-align: left;
-//   content: '.';
-//   margin: 0;
-//   opacity: 0;
-// }
-// .nav-container ul li a:hover {
-//   color: #fff;
-//   z-index: 1;
-// }
-// .nav-container ul li a:hover:after {
-//   z-index: -10;
-//   animation: fill 1s forwards;
-//   -webkit-animation: fill .9s forwards;
-//   -moz-animation: fill 1s forwards;
-//   opacity: 1;
-// }
+//  .nav-container ul li a:after {
+//    text-align: left;
+//    content: '.';
+//    margin: 0;
+//    opacity: 0;
+//  }
+//  .nav-container ul li a:hover {
+//    color: #fff;
+//    z-index: 1;
+//  }
+//  .nav-container ul li a:hover:after {
+//    z-index: -10;
+//    animation: fill 1s forwards;
+//    -webkit-animation: fill .9s forwards;
+//    -moz-animation: fill 1s forwards;
+//    opacity: 1;
+//  }
 
-/* NAVIGATION HOBER Keyframes */
-// @-webkit-keyframes fill {
-//   0% {
-//     width: 0%;
-//     height: 1px;
-//   }
-//   50% {
-//     width: 100%;
-//     height: 1px;
-//   }
-//   100% {
-//     width: 100%;
-//     height: 100%;
-//     background: black;
-//   }
-// }
+// /* NAVIGATION HOBER Keyframes */
+//  @-webkit-keyframes fill {
+//    0% {
+//      width: 0%;
+//      height: 1px;
+//    }
+//    50% {
+//      width: 100%;
+//      height: 1px;
+//    }
+//    100% {
+//      width: 100%;
+//      height: 100%;
+//      background: black;
+//    }
+//  }
 
 
 
@@ -274,8 +275,12 @@ nav ul li a:hover {
   padding: 0;
   padding-top: 70px;
   height: 100vh;
-  // background-image: url(images/slidercomp.jpg); 2nd option
-  background-image: url(images/space2.jpg);  
+  // background-image: url(images/slidercomp.jpg); 
+  background: 
+      linear-gradient(
+        rgba(0, 0, 0, .6)
+      ),
+      url("images/background-2.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;

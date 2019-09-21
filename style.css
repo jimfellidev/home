@@ -200,6 +200,7 @@ nav {
 .nav-item a {
   display: inline-block;
   padding: 10px 15px;
+  padding-bottom: 7px;
   text-decoration: none;
   color: black;
   -webkit-transform: translatey(15%);
@@ -236,7 +237,7 @@ nav ul li a:hover {
 }
 
 .nav-container ul li a:hover:after {
-  width: 100%;
+  width: 75%;
 }
 
 .nav-container ul li a {
@@ -244,7 +245,6 @@ nav ul li a:hover {
   transition: all 2s;
 }
 
-/* NAVIGATION HOBER Keyframes */
 .nav-item:hover a {
   color: black;
 }
@@ -264,7 +264,8 @@ nav ul li a:hover {
   padding: 0;
   padding-top: 70px;
   height: 100vh;
-  background-image: url(images/space2.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url("images/background-2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6)), url("images/background-2.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
