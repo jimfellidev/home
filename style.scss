@@ -291,6 +291,7 @@ nav ul li a:hover {
   padding: 0;
   padding-top: 70px;
   height: 100vh;
+  min-height: 400px;
   // background-image: url(images/slidercomp.jpg); 
   background: 
       linear-gradient(
@@ -309,7 +310,7 @@ nav ul li a:hover {
     transform: translate(-50%);
     top: 28%;
     @media all and (min-width: 320px) and (max-width: 455px) {
-      top: 34%;
+      top: 28%;
     }
     @media all and (min-width: 455px) and (max-width: 667px) {
       top: 41%;
@@ -489,6 +490,7 @@ p {
   //---SECTION ABOUT---//
 
   .about {
+    min-height: 720px;
     overflow: auto;
     margin: 0;
     padding: 0;
@@ -610,6 +612,8 @@ p {
     padding: 0;
     height: 51vh;
     background-color: #000000;
+    min-height: 250px;
+    max-height: 350px;
 
     &__container {
       height: 100%;
@@ -623,6 +627,8 @@ p {
     &__wrapper {
         width: 100%;
         height: 100%;
+
+        
     }
 
     &__header {
@@ -675,6 +681,8 @@ p {
 
   .footer {
     // overflow: auto;
+    min-height: 240px;
+    max-height: 330px;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -704,12 +712,12 @@ p {
             left: 50%;
             position: absolute;
             transform: translate(-50%);
-            top: -12%;
+            top: -10%;
             @media all and (min-width: 320px) and (max-width: 768px) { 
               top: -7.5%;
            }
            @media all and (min-width: 768px) and (max-width: 960px) { 
-            top: -13%;
+            top: -10%;
           }
             &:before {
               color: black;
@@ -723,10 +731,10 @@ p {
               left: 50%;
               -webkit-transform: translate(-50%);
               transform: translate(-50%);
-              top: -7%;
+              top: -6%;
               border-radius: 25%;
               @media all and (min-width: 768px) and (max-width: 960px) { 
-                top: -8%;
+                top: -6%;
               }
               @media all and (min-width: 320px) and (max-width: 768px) { 
                 top: -4%;

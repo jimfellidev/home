@@ -278,6 +278,7 @@ nav ul li a:hover {
   padding: 0;
   padding-top: 70px;
   height: 100vh;
+  min-height: 400px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url("images/background-2.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.6)), url("images/background-2.jpg");
   background-attachment: fixed;
@@ -297,7 +298,7 @@ nav ul li a:hover {
 
 @media all and (min-width: 320px) and (max-width: 455px) {
   .intro__wrapper {
-    top: 34%;
+    top: 28%;
   }
 }
 
@@ -518,6 +519,7 @@ p {
 }
 
 .about {
+  min-height: 720px;
   overflow: auto;
   margin: 0;
   padding: 0;
@@ -641,6 +643,8 @@ p {
   padding: 0;
   height: 51vh;
   background-color: #000000;
+  min-height: 250px;
+  max-height: 350px;
 }
 
 .contact__container {
@@ -715,6 +719,8 @@ p {
 }
 
 .footer {
+  min-height: 240px;
+  max-height: 330px;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -753,7 +759,7 @@ p {
   position: absolute;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  top: -12%;
+  top: -10%;
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
@@ -764,7 +770,7 @@ p {
 
 @media all and (min-width: 768px) and (max-width: 960px) {
   .footer__container--circle-icon {
-    top: -13%;
+    top: -10%;
   }
 }
 
@@ -781,13 +787,13 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%);
   transform: translate(-50%);
-  top: -7%;
+  top: -6%;
   border-radius: 25%;
 }
 
 @media all and (min-width: 768px) and (max-width: 960px) {
   .footer__container--circle-icon-background {
-    top: -8%;
+    top: -6%;
   }
 }
 
