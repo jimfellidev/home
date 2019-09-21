@@ -308,6 +308,9 @@ nav ul li a:hover {
     left: 50%;
     transform: translate(-50%);
     top: 28%;
+    @media all and (min-width: 320px) and (max-width: 455px) {
+      top: 34%;
+    }
     @media all and (min-width: 455px) and (max-width: 667px) {
       top: 41%;
     }
@@ -672,9 +675,11 @@ p {
 
   .footer {
     // overflow: auto;
-    margin: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
     padding: 0;
-    height: 30vh;
+    height: 35vh;
     background-image: url(images/backgroundfoot.jpg);
     background-size: cover;
     background-position: center center;
@@ -690,13 +695,18 @@ p {
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         border-top: 1.5px solid rgba(145, 145, 149, .2);
+          &--circle-wrap {
+            height: 100%;
+            width: 100%;
+            position: relative;
+          }
           &--circle-icon {
             left: 50%;
             position: absolute;
             transform: translate(-50%);
-            top: -11%;
+            top: -12%;
             @media all and (min-width: 320px) and (max-width: 768px) { 
-              top: -8%;
+              top: -7.5%;
            }
            @media all and (min-width: 768px) and (max-width: 960px) { 
             top: -13%;
@@ -709,8 +719,9 @@ p {
               display: block;
               height: 25px;
               width: 29px;
-              position: absolute;
+              position: relative;
               left: 50%;
+              -webkit-transform: translate(-50%);
               transform: translate(-50%);
               top: -7%;
               border-radius: 25%;
@@ -731,28 +742,31 @@ p {
       padding-top: 16px;
       border-top: 1px solid white;
       color: #a1a3a6;
-      position: absolute;
-      top: 25%;
+      position: relative;
+      top: -70%;
+      width: 108px;
       left: 50%;
+      -webkit-transform: translate(-50%);
       transform: translate(-50%);
-      // color: rgb(255,255,255);
       -webkit-font-smoothing: antialiased;
       @media all and (min-width: 320px) and (max-width: 768px) { 
-        padding-top: 49px;
+        padding-top: 31px;
         border-top: 1.2px solid white;
-        top: 20%;
+        top: -69%;
         width: 156px;
      }
      &--color {
       color: #a1a3a6;
      }
+
     }
     &__content {
       text-align: center;
       width: 47%;
       color: white;
-      position: absolute;
-      top: 58%;
+      position: relative;
+      top: -59%;
+      -webkit-transform: translate(-50%);
       transform: translate(-50%);
       left: 50%;
       margin: 0;
@@ -765,7 +779,7 @@ p {
 
       @media all and (min-width: 320px) and (max-width: 768px) { 
         width: 90%;
-        top: 60%;
+        top: -62%;
         font-size: 14px;
         line-height: 1.3;
      }
