@@ -710,14 +710,15 @@ p {
           }
           &--circle-icon {
             left: 50%;
-            position: absolute;
+            position: relative;
             transform: translate(-50%);
-            top: -10%;
+            top: -51px;
             @media all and (min-width: 320px) and (max-width: 768px) { 
-              top: -7.5%;
+              top: -48px;
+              position: relative;
            }
            @media all and (min-width: 768px) and (max-width: 960px) { 
-            top: -10%;
+            top: -51px;
           }
             &:before {
               color: black;

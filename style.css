@@ -756,21 +756,22 @@ p {
 
 .footer__container--circle-icon {
   left: 50%;
-  position: absolute;
+  position: relative;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  top: -10%;
+  top: -51px;
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
   .footer__container--circle-icon {
-    top: -7.5%;
+    top: -48px;
+    position: relative;
   }
 }
 
 @media all and (min-width: 768px) and (max-width: 960px) {
   .footer__container--circle-icon {
-    top: -10%;
+    top: -51px;
   }
 }
 
