@@ -32,6 +32,7 @@ hamburger.addEventListener("click", function() {
   
 // CLOSE DROP MENU ON OFFCLICK
 
+
   document.addEventListener("click", function(event){
     console.log('event.target', event.target);    
     const nav = document.querySelector(".nav__all");
