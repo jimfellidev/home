@@ -46,3 +46,13 @@ hamburger.addEventListener("click", function() {
       hamburger.classList.remove("nav__plus--active");
     }
   })    
+
+
+  // COPYRIGHT YEAR
+
+  
+  // document.getElementById('copyright').appendChild(document.createTextNode (new Date().getFullYear() ) )
+
+  const copyYear = document.createTextNode(new Date().getFullYear());
+
+  document.getElementById('copyright').appendChild(copyYear);
