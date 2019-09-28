@@ -142,19 +142,19 @@ nav {
 
 .nav__plus {
   position: relative;
-  margin-top: 6px;
+  margin-top: 9.75px;
   background: black;
-  height: 40px;
+  height: 36px;
   position: relative;
   width: 8px;
   &:after {
     background: black;
     content: "";
     height: 8px;
-    left: -15.5px;
+    left: -13.7px;
     position: absolute;
-    top: 16px;
-    width: 40px;
+    top: 13.8px;
+    width: 36px;
   }
   &:hover {
     opacity: .85;
@@ -499,7 +499,7 @@ p {
   //---SECTION ABOUT---//
 
   .about {
-    min-height: 720px;
+    // min-height: 720px;
     overflow: auto;
     margin: 0;
     padding: 0;
@@ -513,18 +513,16 @@ p {
     // background-size: 100% 100%;
     background-size: cover;
     background-position: center center;
-    @media all and (min-width: 320px) and (max-width: 768px) { 
-     height: 750px;
-   }
-   @media all and (min-width: 768px){ 
-    max-height: 661px;
-  }
-  //  &:before {
-  //    content: '';
-  //    height: 100%;
-  //    width: 100%;
-  //   color: rgba(0,0,0,0.9);
+    padding-bottom: 93px;
+    @media all and (min-width: 768px){ 
+      padding-bottom: 113px;
+    }   
+  //   @media all and (min-width: 320px) and (max-width: 768px) { 
+  //    height: 750px;
   //  }
+  //  @media all and (min-width: 768px){ 
+  //   max-height: 661px;
+  // }
     &__container {
       width: 100%;
       padding-top: 93px;
@@ -552,7 +550,7 @@ p {
 
     &__photo {
       display: block;
-      padding-top: 63px;
+      padding-top: 35px;
       margin: 0 auto;
       width: 140px;
       text-align: center;
@@ -567,7 +565,7 @@ p {
         position: relative;
         width: 90px;
         margin: 0 auto;
-        margin-top: 35px;
+        margin-top: 30px;
         text-align: center;
         @media all and (min-width: 320px) and (max-width: 768px) { 
           width: 189px;
@@ -584,7 +582,7 @@ p {
         color: white;
         position: relative;
         margin: 0;
-        margin-top: 60px;
+        margin-top: 35px;
         padding: 0;
         font-family: 'Lato', sans-serif;
         line-height: 1.5;
@@ -615,8 +613,8 @@ p {
     margin: 0;
     padding: 0;
     background-color: #000000;
-    min-height: 250px;
-    max-height: 350px;
+    // min-height: 250px;
+    // max-height: 350px;
     
 
     &__container {
@@ -624,11 +622,14 @@ p {
       width: 100%;
       position: relative;
       padding-top: 65px;
+      padding-bottom: 65px;
       @media all and (min-width: 320px) and (max-width: 655px) { 
         padding-top: 55px;
+        padding-bottom: 55px;
       }
       @media all and (min-width: 655px) and (max-width: 768px) { 
         padding-top: 70px;
+        padding-bottom: 70px;
      }
     }
 
@@ -685,8 +686,8 @@ p {
 
   .footer {
     // overflow: auto;
-    min-height: 240px;
-    max-height: 330px;
+    min-height: 280px;
+    max-height: 320px;
     position: absolute;
     height: 100%;
     width: 100%;
