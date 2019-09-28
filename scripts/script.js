@@ -50,9 +50,7 @@ hamburger.addEventListener("click", function() {
 
   // COPYRIGHT YEAR
 
-  
-  // document.getElementById('copyright').appendChild(document.createTextNode (new Date().getFullYear() ) )
 
-  const copyYear = document.createTextNode(new Date().getFullYear());
+const currentYear = new Date().getFullYear();
 
-  document.getElementById('copyright').appendChild(copyYear);
+document.getElementById('copyright').innerText = currentYear;
