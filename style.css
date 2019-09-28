@@ -365,10 +365,10 @@ nav ul li a:hover {
   position: absolute;
   color: black;
   background-color: white;
+  margin-top: 20px;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   left: 50%;
-  bottom: -25%;
   height: 46px;
   width: 140px;
   font-size: 16px;
@@ -377,27 +377,9 @@ nav ul li a:hover {
   text-transform: uppercase;
 }
 
-@media all and (min-width: 455px) and (max-width: 667px) {
+@media all and (min-width: 768px) {
   .intro__button {
-    bottom: -61%;
-  }
-}
-
-@media all and (min-width: 667px) and (max-width: 768px) {
-  .intro__button {
-    bottom: -84%;
-  }
-}
-
-@media all and (min-width: 960px) {
-  .intro__button {
-    top: 180%;
-  }
-}
-
-@media all and (min-width: 768px) and (max-width: 960px) {
-  .intro__button {
-    top: 143%;
+    margin-top: 30px;
   }
 }
 
