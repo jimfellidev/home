@@ -748,9 +748,15 @@ p {
   position: relative;
   margin: 0 auto;
   left: 50%;
-  top: -36px;
+  top: -38px;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .footer__container--circle-icon {
+    top: -38px;
+  }
 }
 
 .footer__container--circle-icon:before {
