@@ -44,6 +44,7 @@ hamburger.addEventListener("click", function() {
       console.log('false')
       menuId.classList.remove("nav__active");
       hamburger.classList.remove("nav__plus--active");
+      hamburger.classList.remove('is-active')
     }
   })    
 
