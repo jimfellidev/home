@@ -89,6 +89,48 @@ body {
   background-color:white;
 }
 
+// DROPBOX HOVER //
+
+#myDropdown li {
+  position:relative;
+  z-index: 1;
+}
+
+#myDropdown li:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: rgba(73, 73, 72, 0.4);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+#myDropdown li:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+#myDropdown li,
+#myDropdown li:after,
+#myDropdown li:before {
+  transition: all .55s;
+}
+#myDropdown li:hover {
+  color: #555;
+}
+
+
+
+
+
 //---SECTION NAV---//
 
 
@@ -661,6 +703,18 @@ p {
           width: 66%;
           margin-top: 8px;
        }
+        &--1 {
+          display: block;
+          @media all and (min-width: 320px) and (max-width: 866px) {
+            display: none;
+          }
+        }
+        &--2 {
+          display: block;
+          @media all and (min-width: 867px) {
+            display: none;
+          }
+        }
           &--link {
             color: white;
             @media all and (min-width: 320px) and (max-width: 768px) { 
@@ -676,10 +730,10 @@ p {
 
   .footer {
     // overflow: auto;
-    min-height: 280px;
-    max-height: 320px;
+    // min-height: 280px;
+    // max-height: 320px;
     position: absolute;
-    height: 100%;
+    // height: 320px;
     width: 100%;
     padding: 0;
     // padding-bottom: 200px;
@@ -703,7 +757,7 @@ p {
             position: relative;
             margin: 0 auto;
             left: 50%;
-            top: -38px;
+            top: -36px;
             transform: translate(-50%);
             @media all and (min-width: 320px) and (max-width: 768px) { 
               top: -38px;
@@ -721,13 +775,15 @@ p {
               width: 29px;
               position: relative;
               margin: 0 auto;
+              margin-bottom: -12px;
+              top: -12px;
               border-radius: 25%;
-              @media all and (min-width: 768px) and (max-width: 960px) { 
-                top: -6%;
-              }
-              @media all and (min-width: 320px) and (max-width: 768px) { 
-                top: -4%;
-             }
+            //   @media all and (min-width: 768px) and (max-width: 960px) { 
+            //     top: -6%;
+            //   }
+            //   @media all and (min-width: 320px) and (max-width: 768px) { 
+            //     top: -4%;
+            //  }
           }
         }
     }
@@ -770,6 +826,8 @@ p {
       -webkit-font-smoothing: antialiased;
       margin: 0 auto;
       margin-top: 45px;
+      padding-bottom: 45px;
+
 
       @media all and (min-width: 320px) and (max-width: 768px) { 
         width: 90%;
@@ -792,50 +850,4 @@ p {
     }
   }
 
-  // .fa {
-  //   color: #a1a3a6;
-    
-  // }
-
-
-  #myDropdown li {
-    position:relative;
-    z-index: 1;
-  }
-  // #myDropdown li:hover {
-  //   color: #91640F;
-  // }
-  #myDropdown li:after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
-    height: 1px;
-    content: '.';
-    color: transparent;
-    background: rgba(73, 73, 72, 0.4);
-    visibility: none;
-    opacity: 0;
-    z-index: -1;
-  }
-  #myDropdown li:hover:after {
-    opacity: 1;
-    visibility: visible;
-    height: 100%;
-  }
-  #myDropdown li,
-  #myDropdown li:after,
-  #myDropdown li:before {
-    transition: all .55s;
-  }
-  #myDropdown li:hover {
-    color: #555;
-  }
-  
-  
-  
   
