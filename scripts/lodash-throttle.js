@@ -224,14 +224,3 @@
 
 /////// End Lodash functions
 
-
-////// Put your stuff here
-
-function heyThere() {
-  console.log('Hello there');
-}
-
-window.addEventListener('scroll', throttle(function () {
-  heyThere();
-}, 150));
-// The time entered here is in ms for how often the the event can occur. So if it's 100ms, that's 1/10th of a second, so if you're scrolling it will fire 10 times a second, instead of the crazy amount of times it would without the throttle.
